@@ -94,7 +94,7 @@ class Proyect extends CI_Controller {
 
                 //actualizar fecha final y colocar estado en atrazada
                 foreach($tareas_retrazadas as $tarea){
-
+                    $tarea->id;
                     $id = $tarea->id;
 
                     $this->db->query("update tareas set estado = '3' and fecha_fin = '$fecha_actual' where (id = '$id')");

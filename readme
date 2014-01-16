@@ -1,7 +1,7 @@
-Sistema para la gestión de proyectos y tareas 
+ï»¿Sistema para la gestiÃ³n de proyectos y tareas 
 
 
-Se presenta una aplicación desarrollada en tecnología web utilizando los siguientes componentes:
+Se presenta una aplicaciÃ³n desarrollada en tecnologÃ­a web utilizando los siguientes componentes:
 
 
 jquery
@@ -16,29 +16,29 @@ sendmail
 
 
 
-El objetivo es solucionar y ayudar en la optimización del proceso de producción mediante el control y registro de cada una de las actividades de los empleados de la compañía como lo expresó el requerimiento del cliente.
+El objetivo es solucionar y ayudar en la optimizaciÃ³n del proceso de producciÃ³n mediante el control y registro de cada una de las actividades de los empleados de la compaÃ±Ã­a como lo expresÃ³ el requerimiento del cliente.
 
 
 
 
-Se compone en su lógica de negocio los componentes:
+Se compone en su lÃ³gica de negocio los componentes:
 
 
 Empleados
 Clientes
 Proyectos
 Tareas
-Parametrización
+ParametrizaciÃ³n
 
 
-Se desarrolla usando el patrón conocido MVC que permite la separación de los elementos que conforman en software y la escalabilidad a largo plazo.
+Se desarrolla usando el patrÃ³n conocido MVC que permite la separaciÃ³n de los elementos que conforman en software y la escalabilidad a largo plazo.
 
 
-Para la instalación :
+Para la instalaciÃ³n :
 
-
-1. Copie los archivos del repositorio en su servidor web
-2. Ir a la url http://susitiodeaplicacion/install y siga los pasos
+1. cree una base de datos mysql y un usuario con clave de acceso
+2. Copie los archivos del repositorio en su servidor web
+3. Ir a la url http://susitiodeaplicacion/install y siga los pasos
 
 
 
@@ -55,7 +55,14 @@ url: http://www.pixelweb.com.co/demoprueba
 -------------------------
 
 
-Para conocer el código base que se usó para diseñar el modelo de  aplicación ir a:
+Para conocer el cÃ³digo base que se usÃ³ para diseÃ±ar el modelo de  aplicaciÃ³n ir a:
 
 
-application/controllers/proyecto.php
+application/controllers/proyect.php
+
+Para conocer el modelo entidad relacion creado el archivo:
+Entidad_relacion.png
+
+El archivo sql se encuentra en install/sql/
+
+El instalador es 100% codigo php y javascript propio sin usar POO basado en el modelo para poner a funcionar a codeifniter que es el core de la aplicacion
