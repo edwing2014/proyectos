@@ -1,10 +1,4 @@
-<script src="../plantillas/js/jquery.min.js">
-</script>
-<script src="../plantillas/js/bootstrap.js">
-</script>
-<link href="../plantillas/icomoon/style.css" rel="stylesheet">
-<link href="../plantillas/css/main.css" rel="stylesheet">
-<link href="../plantillas/css/bootstrap.css" rel="stylesheet">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript">
 
     var flag = 0;
@@ -14,18 +8,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="bootstrap.css"/>
+    <link type="text/css" rel="stylesheet" href="http://getbootstrap.com/2.3.2/assets/css/bootstrap.css" />
 </head>
 <body>
 <div class="container">
     <div class="row-fluid well" style="margin-top: 50px">
-        <h4>Instalacion de sistema de pedidos.</h4>
+        <h4>Instalacion de sistema de proyectos.</h4>
        <h5> Verificando requsitos del servidor y carpeta.</h5>
-        <?php if(!extension_loaded ( 'curl')){ ?>
-       <b class="alert-warning">Extensiones PHP: </b>
 
-        <div class="span12">Debe instalar la extension curl para PHP.</div>
-        <?php } ?>
 
 
         <b class="alert-warning">permisos archivo: </b>

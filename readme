@@ -1,1 +1,61 @@
-Sistema de gestion de proyectos basado en codeigniter y boostrap
+Sistema para la gestión de proyectos y tareas 
+
+
+Se presenta una aplicación desarrollada en tecnología web utilizando los siguientes componentes:
+
+
+jquery
+codeigniter (ultima version) PHP 5.2
+twitter boostrap(css3, html5) responsive template
+mysql
+sendmail
+
+
+
+
+
+
+
+El objetivo es solucionar y ayudar en la optimización del proceso de producción mediante el control y registro de cada una de las actividades de los empleados de la compañía como lo expresó el requerimiento del cliente.
+
+
+
+
+Se compone en su lógica de negocio los componentes:
+
+
+Empleados
+Clientes
+Proyectos
+Tareas
+Parametrización
+
+
+Se desarrolla usando el patrón conocido MVC que permite la separación de los elementos que conforman en software y la escalabilidad a largo plazo.
+
+
+Para la instalación :
+
+
+1. Copie los archivos del repositorio en su servidor web
+2. Ir a la url http://susitiodeaplicacion/install y siga los pasos
+
+
+
+Ver demo en funcionamiento: 
+
+
+usuario: demo
+clave: demo
+
+url: http://www.pixelweb.com.co/demoprueba
+
+
+
+-------------------------
+
+
+Para conocer el código base que se usó para diseñar el modelo de  aplicación ir a:
+
+
+application/controllers/proyecto.php
