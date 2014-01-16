@@ -303,8 +303,8 @@ class Proyect extends CI_Controller {
 
 
     function notificar1($post_array,$primary_key){
-        $this->load->model(Config_model);
-        $fila = $this->Config_model->get_config_data();
+        $this->load->model(config_model);
+        $fila = $this->config_model->get_config_data();
 
 
 
