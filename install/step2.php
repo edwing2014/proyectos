@@ -1,12 +1,6 @@
 <?php session_start(); ?>
 
-<script src="../plantillas/js/jquery.min.js">
-</script>
-<script src="../plantillas/js/bootstrap.js">
-</script>
-<link href="../plantillas/icomoon/style.css" rel="stylesheet">
-<link href="../plantillas/css/main.css" rel="stylesheet">
-<link href="../plantillas/css/bootstrap.css" rel="stylesheet">
+
 
 
 <?php
@@ -19,7 +13,7 @@ if (isset($_POST['btn-install'])) {
     if($_FILES['file']['name'] != ''){
 
 
-        $uploadfile = '../uploads/sql/'.basename($_FILES['file']['name']);
+        $uploadfile = '../assets/uploads/sql/'.basename($_FILES['file']['name']);
 
 
     if (move_uploaded_file($_FILES['file']['tmp_name'], $uploadfile)) {
@@ -54,10 +48,10 @@ if (isset($_POST['btn-install'])) {
            // echo "Guargando configuracion...<br>";
 
           //  echo "Asignando permisos de escritura<br>";
-            chmod("../appication/config/config.php", 0777);
-            chmod("../appication/config/database.php", 0777);
+            chmod("../application/config/config.php", 0777);
+            chmod("../application/config/database.php", 0777);
 
-           // echo "Permisos database: ". substr(sprintf('%o', fileperms('../appication/config/database.php')), -4);
+          //  echo "Permisos database: ". substr(sprintf('%o', fileperms('../application/config/database.php')), -4);
 
 
             // setting site url

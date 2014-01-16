@@ -303,10 +303,12 @@ class Proyect extends CI_Controller {
 
 
     function notificar1($post_array,$primary_key){
-        $this->load->model(config_model);
+        $this->load->model('config_model');
+
         $fila = $this->config_model->get_config_data();
 
 
+        if(count($fila) > 0){
 
         $empleado = $this->db->query("select * from empleados where id = '".$post_array['empleado']."'");
 
@@ -330,7 +332,7 @@ class Proyect extends CI_Controller {
         $this->email->message('Se le ha asignado una nueva tarea en el sistema de proyectos, nombre de la tarea :\n '.$post_array['nombre']);
 
         $this->email->send();
-
+    }
 
 }
 

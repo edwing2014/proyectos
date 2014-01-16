@@ -1,4 +1,4 @@
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
 <script type="text/javascript">
 
     var flag = 0;
@@ -9,6 +9,7 @@
 <html>
 <head>
     <link type="text/css" rel="stylesheet" href="http://getbootstrap.com/2.3.2/assets/css/bootstrap.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 <body>
 <div class="container">
@@ -22,7 +23,7 @@
 
 <?php
 
-        $permisos = fileperms('../pdf');
+        $permisos = fileperms('../assets/uploads');
 
         if (($permisos & 0xC000) == 0xC000) {
             // Socket
@@ -82,12 +83,12 @@
 
             </script>
 
-            <div class="label-warning">Poner permisos de escritura lectura y ejecucion (0777) para la carpeta pdf</div>
+            <div class="label-warning">Colocar permisos de escritura lectura y ejecucion (0777) para la carpeta assets/upload</div>
             <br>
         <?php
         }
 
-    $permisos = fileperms('../uploads');
+    $permisos = fileperms('../assets/uploads');
 
     if (($permisos & 0xC000) == 0xC000) {
         // Socket
@@ -147,7 +148,7 @@
 
         </script>
 
-        <div class="label-warning">Poner permisos de escritura lectura y ejecucion (0777) para la carpeta uploads</div>
+        <div class="label-warning">Poner permisos de escritura lectura y ejecucion (0777) para la carpeta assets/uploads</div>
 <br>
         <?php
     }
