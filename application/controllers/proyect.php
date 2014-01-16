@@ -390,10 +390,15 @@ class Proyect extends CI_Controller {
 echo '<meta charset="UTF-8"> <link type="text/css" rel="stylesheet" href="http://getbootstrap.com/2.3.2/assets/css/bootstrap.css" />';
 
         echo '<div class="container" align="center" style="margin-top:15%">';
+
         echo "<h1>Gestión de proyectos:</h><br>";
 
         echo "<h3>Acceso al sistema:</h3><br>";
-        echo validation_errors()."<br>";
+        if($this->session->userdata('error_login')){
+
+         echo '<div class="row" align="center"><div class="span4"></div> <div class="label-warning span4" align="center" style="margin-top:15%">'.$this->session->userdata('error_login').'</div><div class="span4"></div> </div>';
+
+        }
 
         echo form_open('proyect/login_validate');
 
@@ -473,6 +478,8 @@ echo '<meta charset="UTF-8"> <link type="text/css" rel="stylesheet" href="http:/
             }
             else
             {
+
+                $this->session->set_userdata('error_login', "Usuario y/o contraseña invalidos");
                 redirect(site_url('proyect/login'));
             }
         }

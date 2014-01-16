@@ -1,17 +1,10 @@
 
-<script src="<?php echo base_url();?>plantillas/js/jquery.min.js">
-</script>
-<script src="<?php echo base_url();?>plantillas/js/bootstrap.js">
-</script>
-<link href="<?php echo base_url();?>plantillas/icomoon/style.css" rel="stylesheet">
-<link href="<?php echo base_url();?>plantillas/css/main.css" rel="stylesheet">
-<link href="<?php echo base_url();?>plantillas/css/bootstrap.css" rel="stylesheet">
-
 
 <!DOCTYPE html>
 <html>
 <head>
-
+    <link type="text/css" rel="stylesheet" href="http://getbootstrap.com/2.3.2/assets/css/bootstrap.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 <body>
 <div class="container">
@@ -22,22 +15,7 @@
 
         echo form_open('install/gconfig');
 
-        $data = array(
-            'name'        => 'razon_social',
-            'id'          => 'razon_social',
-            'value'       => '',
-            'required'    => 'requered',
-            'maxlength'   => '100',
-            'size'        => '50',
-            'style'       => 'width:50%',
-        );
-
-        echo "<label>Empresa:</label> ". form_input($data)."<br>";
-
-
-
-
-
+       echo "Datos del Servidor de correo:<br>";
         $data = array(
             'name'        => 'usuario_mail',
             'id'          => 'usuario_mail',
@@ -89,30 +67,6 @@
 
         echo "<label>Puerto Servidor de correo:</label> ". form_input($data)."<br>";
 
-        $data = array(
-            'name'        => 'location_sugar',
-            'id'          => 'location_sugar',
-            'value'       => 'http://su-ip-o-domonio/crm/service/v4/rest.php',
-            'maxlength'   => '100',
-            'required'    => 'requered',
-            'size'        => '50',
-            'style'       => 'width:50%',
-        );
-
-        echo "<label>Url de sugarcrm: Ej: (http://su-ip-o-domonio/crm/service/v4/rest.php)</label> ". form_input($data).' '.$error."<br>";
-
-
-        $data = array(
-            'name'        => 'trm',
-            'id'          => 'trm',
-            'value'       => '',
-            'required'    => 'requered',
-            'maxlength'   => '100',
-            'size'        => '50',
-            'style'       => 'width:50%',
-        );
-
-        echo "<label>Tasa representativa del dolar actual: </label> ". form_input($data)."<br>";
 
         //echo form_submit('mysubmit', 'Finalizar!');
     echo '</div><input type="submit" value="Finalizar instalación" class="btn btn-info" name="mysubmit">';
