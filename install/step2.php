@@ -100,12 +100,13 @@ if (isset($_POST['btn-install'])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="bootstrap.css"/>
+    <link type="text/css" rel="stylesheet" href="http://getbootstrap.com/2.3.2/assets/css/bootstrap.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 <body>
 <div class="container">
     <div class="row-fluid well" style="margin-top: 50px">
-        <h4>Instalacion de sistema de pedidos.</h4>
+        <h4>Instalacion de sistema de proyectos.</h4>
         <form class="form-horizontal" action="" method="post" style="margin-top:30px;" enctype="multipart/form-data">
 
             <?php if ($error == 1): ?>
